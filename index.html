@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Versicherungsprämie</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <h1>Versicherungsprämie</h1>
+
+  <form id="nutzereingabe">  
+    <label for="vorname">Vorname:</label>
+    <input type="text" class="vorname" id="vorname" required><br><br>
+
+    <label for="nachname">Nachname:</label>
+    <input type="text" class="nachname" id="nachname" required><br><br>
+
+    <label for="kmh">Kilometerleistung:</label>
+    <input type="text" class="kmh" id="kmh" required><br><br>
+
+    <label for="plz">PLZ:</label>
+    <input type="text" class="plz" id="plz" required><br><br>
+
+    <label for="fahrzeug">Fahrzeugtyp:</label>  
+    <select class="fahrzeug" id="fahrzeug" required>
+      <option value="">Bitte auswählen</option>
+      <option value="LKW">LKW</option>
+      <option value="Auto">Auto</option>
+      <option value="Motorrad">Motorrad</option>
+      <option value="Scooter">Scooter</option>
+    </select><br><br>
+
+    <button type="submit">Daten absenden</button>
+  </form>
+
+  <div id="ergebnis" style="display: none; margin-top: 20px; padding: 10px; border: 1px solid #ccc;"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
